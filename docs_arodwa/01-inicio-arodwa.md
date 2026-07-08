@@ -1,11 +1,9 @@
-# Inicio de AroDWA
-
-Este documento es un espacio de ejemplo para la wiki de AroDWA. Puedes editar este contenido más adelante con información real del proyecto, del equipo o de los procesos.
-
+# Pequeña Introduccion
+La idea de este wiki es documentar el proceso de instalación de windows server, aplicando algunas configuraciones básicas.
 ## Propósito
 
-- Servir como punto de entrada del conocimiento.
-- Organizar información técnica y operativa.
-- Permitir ampliar la documentación con nuevos temas.
+- Conocer el entorno de windows server, y sus configuraciones iniciales básicas.
+- Aplicar algunos roles y características de windows server.
+- Además de mostrar el uso y configuraciones básicas de windows server, también se incorpora un cliente al servidor.
 
-> Este texto puede reemplazarse por una introducción oficial cuando exista contenido definitivo.
+> El wiki contiene imágenes del proceso de instalación y configuración para apoyar en el proceso y sea mas amigable al usuario lector.
