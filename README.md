@@ -1,16 +1,20 @@
+Este es un readme "tipo" hecho por ia copilot, fue traducido al español con ia copilot tambien...
+
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Esta plantilla sirve para empezar a trabajar con React y Vite de forma sencilla.
 
-Currently, two official plugins are available:
+Vite ayuda a ver los cambios rápido mientras programas, y React te permite crear páginas con componentes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Actualmente, hay dos herramientas oficiales que puedes usar:
 
-## React Compiler
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) usa [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) usa [SWC](https://swc.rs/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Compilador React
 
-## Expanding the Oxlint configuration
+Esta plantilla no usa React Compiler por ahora porque puede hacer más lenta la preparación durante el desarrollo. Si quieres aprender cómo activarlo, mira [esta guía](https://react.dev/learn/react-compiler/installation).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Mejorar la configuración de Oxlint
+
+Si vas a crear una aplicación más grande, te recomendamos usar TypeScript para tener un mejor control de los errores. Puedes ver la [plantilla TS](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) para aprender más.
