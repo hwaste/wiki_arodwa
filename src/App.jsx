@@ -1,28 +1,27 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { BookOpen, Network, Server, ShieldCheck, Sparkles, Wrench } from 'lucide-react'
 import MarkdownDoc from './components/MarkdownDoc'
 import './App.css'
+import introDoc from '../docs_arodwa/01-inicio-arodwa.md?raw'
+import installationDoc from '../docs_arodwa/02-instalacion-arodwa.md?raw'
+import activeDirectoryDoc from '../docs_arodwa/03-active-directory-arodwa.md?raw'
+import clientDomainDoc from '../docs_arodwa/04-cliente-dominio-arodwa.md?raw'
+import networkServicesDoc from '../docs_arodwa/05-servicios-de-red-arodwa.md?raw'
+import gpoDoc from '../docs_arodwa/06-gpo-arodwa.md?raw'
+import promptsDoc from '../docs_arodwa/07-prompts-arodwa.md?raw'
 
 const docs = [
-  { id: '01-inicio-arodwa', title: 'Inicio', file: 'docs_arodwa/01-inicio-arodwa.md', icon: BookOpen },
-  { id: '02-instalacion-arodwa', title: 'Instalación', file: 'docs_arodwa/02-instalacion-arodwa.md', icon: Wrench },
-  { id: '03-active-directory-arodwa', title: 'Active Directory', file: 'docs_arodwa/03-active-directory-arodwa.md', icon: Server },
-  { id: '04-cliente-dominio-arodwa', title: 'Cliente en dominio', file: 'docs_arodwa/04-cliente-dominio-arodwa.md', icon: ShieldCheck },
-  { id: '05-servicios-de-red-arodwa', title: 'Servicios de red', file: 'docs_arodwa/05-servicios-de-red-arodwa.md', icon: Network },
-  { id: '06-gpo-arodwa', title: 'GPO', file: 'docs_arodwa/06-gpo-arodwa.md', icon: ShieldCheck },
-  { id: '07-prompts-arodwa', title: 'Prompts', file: 'docs_arodwa/07-prompts-arodwa.md', icon: Sparkles },
+  { id: '01-inicio-arodwa', title: 'Inicio', content: introDoc, icon: BookOpen },
+  { id: '02-instalacion-arodwa', title: 'Instalación', content: installationDoc, icon: Wrench },
+  { id: '03-active-directory-arodwa', title: 'Active Directory', content: activeDirectoryDoc, icon: Server },
+  { id: '04-cliente-dominio-arodwa', title: 'Cliente en dominio', content: clientDomainDoc, icon: ShieldCheck },
+  { id: '05-servicios-de-red-arodwa', title: 'Servicios de red', content: networkServicesDoc, icon: Network },
+  { id: '06-gpo-arodwa', title: 'GPO', content: gpoDoc, icon: ShieldCheck },
+  { id: '07-prompts-arodwa', title: 'Prompts', content: promptsDoc, icon: Sparkles },
 ]
 
 function App() {
   const [activeDoc, setActiveDoc] = useState(docs[0])
-  const [content, setContent] = useState('')
-
-  useEffect(() => {
-    fetch(activeDoc.file)
-      .then((response) => response.text())
-      .then((text) => setContent(text))
-      .catch(() => setContent('# Error al cargar el documento'))
-  }, [activeDoc])
 
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(56,189,248,0.25),_transparent_35%),linear-gradient(135deg,_#020617,_#111827)] text-slate-100">
@@ -70,7 +69,7 @@ function App() {
         </aside>
 
         <main className="flex-1 rounded-3xl border border-slate-800 bg-slate-900/70 p-4 shadow-2xl shadow-slate-950/40 sm:p-6">
-          <MarkdownDoc content={content} title={activeDoc.title} />
+          <MarkdownDoc content={activeDoc.content} title={activeDoc.title} />
         </main>
       </div>
     </div>
