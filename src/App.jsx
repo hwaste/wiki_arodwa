@@ -4,13 +4,13 @@ import MarkdownDoc from './components/MarkdownDoc'
 import './App.css'
 
 const docs = [
-  { id: '01-inicio-arodwa', title: 'Inicio', file: '/docs_arodwa/01-inicio-arodwa.md', icon: BookOpen },
-  { id: '02-instalacion-arodwa', title: 'Instalación', file: '/docs_arodwa/02-instalacion-arodwa.md', icon: Wrench },
-  { id: '03-active-directory-arodwa', title: 'Active Directory', file: '/docs_arodwa/03-active-directory-arodwa.md', icon: Server },
-  { id: '04-cliente-dominio-arodwa', title: 'Cliente en dominio', file: '/docs_arodwa/04-cliente-dominio-arodwa.md', icon: ShieldCheck },
-  { id: '05-servicios-de-red-arodwa', title: 'Servicios de red', file: '/docs_arodwa/05-servicios-de-red-arodwa.md', icon: Network },
-  { id: '06-gpo-arodwa', title: 'GPO', file: '/docs_arodwa/06-gpo-arodwa.md', icon: ShieldCheck },
-  { id: '07-prompts-arodwa', title: 'Prompts', file: '/docs_arodwa/07-prompts-arodwa.md', icon: Sparkles },
+  { id: '01-inicio-arodwa', title: 'Inicio', file: 'docs_arodwa/01-inicio-arodwa.md', icon: BookOpen },
+  { id: '02-instalacion-arodwa', title: 'Instalación', file: 'docs_arodwa/02-instalacion-arodwa.md', icon: Wrench },
+  { id: '03-active-directory-arodwa', title: 'Active Directory', file: 'docs_arodwa/03-active-directory-arodwa.md', icon: Server },
+  { id: '04-cliente-dominio-arodwa', title: 'Cliente en dominio', file: 'docs_arodwa/04-cliente-dominio-arodwa.md', icon: ShieldCheck },
+  { id: '05-servicios-de-red-arodwa', title: 'Servicios de red', file: 'docs_arodwa/05-servicios-de-red-arodwa.md', icon: Network },
+  { id: '06-gpo-arodwa', title: 'GPO', file: 'docs_arodwa/06-gpo-arodwa.md', icon: ShieldCheck },
+  { id: '07-prompts-arodwa', title: 'Prompts', file: 'docs_arodwa/07-prompts-arodwa.md', icon: Sparkles },
 ]
 
 function App() {
