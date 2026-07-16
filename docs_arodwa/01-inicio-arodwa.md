@@ -1,8 +1,8 @@
 # Pequeña Introduccion
-La idea de este wiki es documentar el proceso de instalación de windows server, aplicando algunas configuraciones básicas.
+La idea de este wiki es documentar el proceso de instalación de linux server, aplicando algunas configuraciones básicas.
 ## Propósito
 
-- Conocer el entorno de windows server, y sus configuraciones iniciales básicas.
+- Conocer el entorno de linux server, y sus configuraciones iniciales básicas.
 - Aplicar algunos roles y características de windows server.
 - Además de mostrar el uso y configuraciones básicas de windows server, también se incorpora un cliente al servidor.
 

@@ -3,20 +3,20 @@ import { BookOpen, Network, Server, ShieldCheck, Sparkles, Wrench } from 'lucide
 import MarkdownDoc from './components/MarkdownDoc'
 import './App.css'
 import introDoc from '../docs_arodwa/01-inicio-arodwa.md?raw'
-import installationDoc from '../docs_arodwa/02-instalacion-arodwa.md?raw'
-import activeDirectoryDoc from '../docs_arodwa/03-active-directory-arodwa.md?raw'
-import clientDomainDoc from '../docs_arodwa/04-cliente-dominio-arodwa.md?raw'
-import networkServicesDoc from '../docs_arodwa/05-servicios-de-red-arodwa.md?raw'
-import gpoDoc from '../docs_arodwa/06-gpo-arodwa.md?raw'
+import licenciasDoc from '../docs_arodwa/02-licencias-arodwa.md?raw'
+import instalacionDoc from '../docs_arodwa/03-instalacion-arodwa.md?raw'
+import permisosDoc from '../docs_arodwa/04-permisos-arodwa.md?raw'
+import paquetesDoc from '../docs_arodwa/05-paquetes-arodwa.md?raw'
+import nginxDoc from '../docs_arodwa/06-nginx-arodwa.md?raw'
 import promptsDoc from '../docs_arodwa/07-prompts-arodwa.md?raw'
 
 const docs = [
   { id: '01-inicio-arodwa', title: 'Inicio', content: introDoc, icon: BookOpen },
-  { id: '02-instalacion-arodwa', title: 'Instalación', content: installationDoc, icon: Wrench },
-  { id: '03-active-directory-arodwa', title: 'Active Directory', content: activeDirectoryDoc, icon: Server },
-  { id: '04-cliente-dominio-arodwa', title: 'Cliente en dominio', content: clientDomainDoc, icon: ShieldCheck },
-  { id: '05-servicios-de-red-arodwa', title: 'Servicios de red', content: networkServicesDoc, icon: Network },
-  { id: '06-gpo-arodwa', title: 'GPO', content: gpoDoc, icon: ShieldCheck },
+  { id: '02-licencias-arodwa', title: 'Licencias', content: licenciasDoc, icon: Wrench },
+  { id: '03-instalacion-arodwa', title: 'Instalación', content: instalacionDoc, icon: Wrench },
+  { id: '04-permisos-arodwa', title: 'Permisos', content: permisosDoc, icon: ShieldCheck },
+  { id: '05-paquetes-arodwa', title: 'Paquetes', content: paquetesDoc, icon: Network },
+  { id: '06-nginx-arodwa', title: 'NGINX', content: nginxDoc, icon: Server },
   { id: '07-prompts-arodwa', title: 'Prompts', content: promptsDoc, icon: Sparkles },
 ]
 
