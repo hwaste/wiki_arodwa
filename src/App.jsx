@@ -29,9 +29,9 @@ function App() {
         <aside className="w-full rounded-3xl border border-slate-800 bg-slate-900/80 p-5 shadow-2xl shadow-slate-950/40 lg:w-72">
           <div className="mb-6">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-300">Wiki AroDWA</p>
-            <h1 className="mt-2 text-2xl font-semibold text-white">Documentación inicial</h1>
+            <h1 className="mt-2 text-2xl font-semibold text-white">Instalacion de Ubuntu Linux :D</h1>
             <p className="mt-2 text-sm text-slate-400">
-              Estructura lista para ampliar con contenido real y capturas laterales.
+              Guia de instalacion de Ubuntu Linux y algunas configuraciones iniciales.
             </p>
           </div>
 

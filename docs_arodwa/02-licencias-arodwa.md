@@ -4,7 +4,7 @@ A continuación se muestra la aplicación de los diferentes comandos para visual
 
 1. ls /usr/share/common-licenses/
 
-![](public/img-ardowa/licencia1.png)
+![](public/img-arodwa/licencia1.png)
 
 2. less /usr/share/common-licenses/GPL-3
 

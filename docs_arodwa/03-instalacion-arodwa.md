@@ -25,13 +25,8 @@ Muestra la información de las tarjetas de red, como las direcciones IP, el esta
 
 ![](public/img-arodwa/ip-a.png)
 
-`sudo apt update && sudo apt upgrade -y`
 
-`apt update: actualiza la lista de programas y versiones disponibles en los repositorios.`
 
-&&: hace que el siguiente comando se ejecute solo si el anterior terminó correctamente.
-
-apt upgrade -y: instala todas las actualizaciones disponibles para los programas ya instalados. La opción -y responde automáticamente "sí" a las preguntas de confirmación.
 
 sudo ufw allow OpenSSH && sudo ufw allow 80/tcp && sudo ufw enable
 
@@ -50,7 +45,32 @@ Muestra el estado detallado del firewall, indicando si está activo y qué regla
 ![](public/img-arodwa/edito-yaml2.png)
 
 ### Acá tuve que corregir la indentación...
-para aplicar los ajustes de red aplicar: 
+para que los ajustes de red tengan efecto en el sistema operativo aplicar: 
 `sudo netplan apply`
 
 ![](public/img-arodwa/aplico-yaml3-netplan.png)
+
+## Configurando reglas de firewall
+
+![](public/img-arodwa/reglas-firewall.png)
+
+Verificar estado de las reglas de firewall
+![](public/img-arodwa/verificar-estado-fw.png)
+
+### Explicación breve de los comandos:
+
+1. Establecer las políticas predeterminadas por defecto, lo más seguro es bloquear todas las conexiones entrantes y permitir las salientes.bashsudo ufw default deny incoming
+`sudo ufw default allow outgoing`
+
+2. Permitir servicios esenciales (Ej. SSH)Si administras el servidor de forma remota, es obligatorio habilitar el acceso SSH antes de encender el firewall, de lo contrario te bloquearás a ti mismo.
+`sudo ufw allow ssh`
+
+3. Habilitar el firewall: activa el cortafuegos y asegúrate de que se inicie automáticamente cada vez que reinicies el servidor.
+`sudo ufw enable`
+
+4. Abrir otros puertos necesarios: si estás ejecutando servicios específicos como un servidor web, puedes permitir el tráfico fácilmente:
+`HTTP (Web sin encriptar): sudo ufw allow 80/tcp`
+`HTTPS (Web segura): sudo ufw allow 443/tcp`
+
+5. Verificar el estado y las reglas activas para comprobar que el firewall está activo y ver qué puertos están abiertos:
+`sudo ufw status verbose`
