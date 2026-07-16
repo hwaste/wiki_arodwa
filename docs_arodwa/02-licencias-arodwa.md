@@ -4,20 +4,20 @@ A continuación se muestra la aplicación de los diferentes comandos para visual
 
 1. ls /usr/share/common-licenses/
 
-![](public/img-arodwa/licencia1.png)
+![](/img-arodwa/licencia1.png)
 
 2. less /usr/share/common-licenses/GPL-3
 
-![](public/img-arodwa/licencia2.png)
+![](/img-arodwa/licencia2.png)
 
 3. cat /usr/share/doc/bash/copyright
 Para poder visualizar y navegar por la documentacion de la licencia 
 apliqué: 
 less /usr/share/doc/bash/copyright
 
-![](public/img-arodwa/licencia3.png)
-![](public/img-arodwa/licencia3.2.png)
-![](public/img-arodwa/licencia3.3.png)
+![](/img-arodwa/licencia3.png)
+![](/img-arodwa/licencia3.2.png)
+![](/img-arodwa/licencia3.3.png)
 
 ## ¿Qué es software libre y la diferencia entre copyleft (GPL), permisivas 
 ### (MIT/BSD/Apache) y propietario. ¿Bajo qué tipo de licencia está Ubuntu?

@@ -3,7 +3,7 @@
 sudo hostnamectl set-hostname srv-wiki
 ip a
 
-![](public/img-ardowa/.png)
+![](/img-arodwa/hostname1.png)
 
 sudo apt update && sudo apt upgrade -y
 sudo ufw allow OpenSSH && sudo ufw allow 80/tcp && sudo ufw enable
@@ -15,7 +15,7 @@ sudo hostnamectl set-hostname srv-wiki
 
 para ver si se cambió el nombre del hostname:
 aplicar el comando `hostname`
-![](public/img-arodwa/hostname1.png)
+![](/img-arodwa/hostname1.png)
 
 Cambia el nombre del computador o servidor a srv-wiki. Ese nombre es el que identifica al equipo dentro de una red.
 
@@ -23,7 +23,7 @@ Cambia el nombre del computador o servidor a srv-wiki. Ese nombre es el que iden
 
 Muestra la información de las tarjetas de red, como las direcciones IP, el estado de la conexión y otros datos relacionados con la red.
 
-![](public/img-arodwa/ip-a.png)
+![](/img-arodwa/ip-a.png)
 
 
 
@@ -40,22 +40,22 @@ Muestra el estado detallado del firewall, indicando si está activo y qué regla
 
 ## - Direccionamiento IP
 
-![](public/img-arodwa/edito-yaml.png)
+![](/img-arodwa/edito-yaml.png)
 
-![](public/img-arodwa/edito-yaml2.png)
+![](/img-arodwa/edito-yaml2.png)
 
 ### Acá tuve que corregir la indentación...
 para que los ajustes de red tengan efecto en el sistema operativo aplicar: 
 `sudo netplan apply`
 
-![](public/img-arodwa/aplico-yaml3-netplan.png)
+![](/img-arodwa/aplico-yaml3-netplan.png)
 
 ## Configurando reglas de firewall
 
-![](public/img-arodwa/reglas-firewall.png)
+![](/img-arodwa/reglas-firewall.png)
 
 Verificar estado de las reglas de firewall
-![](public/img-arodwa/verificar-estado-fw.png)
+![](/img-arodwa/verificar-estado-fw.png)
 
 ### Explicación breve de los comandos:
 

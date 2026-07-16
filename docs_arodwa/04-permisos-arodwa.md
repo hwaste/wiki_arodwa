@@ -4,7 +4,7 @@
 
 `apt update: actualiza la lista de programas y versiones disponibles en los repositorios.`
 
-![](public/img-arodwa/update-aptupdate-aptupgrade.png)
+![](/img-arodwa/update-aptupdate-aptupgrade.png)
 
 
 &&: hace que el siguiente comando se ejecute solo si el anterior terminó correctamente.
