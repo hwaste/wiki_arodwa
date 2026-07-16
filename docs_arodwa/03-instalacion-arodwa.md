@@ -1,65 +1,67 @@
-## B - Instalación y configuración básica
+## B - Instalación, configuración básica, y firewall
 
-sudo hostnamectl set-hostname srv-wiki
-ip a
+Cambiar el nombre del hostname:
+`sudo hostnamectl set-hostname srv-wiki`
 
 ![](/img-arodwa/hostname1.png)
 
-sudo apt update && sudo apt upgrade -y
-sudo ufw allow OpenSSH && sudo ufw allow 80/tcp && sudo ufw enable
-sudo ufw status verbose
+Aca muestro como cambia el nombre del computador o servidor a srv-wiki, ese nombre es el que identifica al equipo dentro de una red.
 
-Cada comando hace lo siguiente:
-
-sudo hostnamectl set-hostname srv-wiki
-
-para ver si se cambió el nombre del hostname:
 aplicar el comando `hostname`
 ![](/img-arodwa/hostname1.png)
 
-Cambia el nombre del computador o servidor a srv-wiki. Ese nombre es el que identifica al equipo dentro de una red.
+## - Direccionamiento IP
+
+Para ver la información de las tarjetas de red, como las direcciones IP, el estado de la conexión y otros datos relacionados con la red, aplico el comando:
 
 `ip a`
 
-Muestra la información de las tarjetas de red, como las direcciones IP, el estado de la conexión y otros datos relacionados con la red.
-
 ![](/img-arodwa/ip-a.png)
+## - Modificar ajustes de red:
+en la terminal abrir el archivo de configuración 
+"00-installer-config.yaml" con editor nano y permisos de root con "sudo"
 
+`sudo nano /etc/netplan/00-installer-config.yaml`
 
+![](/img-arodwa/sudonano-abrir-yaml.png)
 
-
-sudo ufw allow OpenSSH && sudo ufw allow 80/tcp && sudo ufw enable
-
-Configura el firewall (UFW) para permitir ciertas conexiones:
-ufw allow OpenSSH: permite conexiones por SSH, para administrar el servidor de forma remota.
-ufw allow 80/tcp: permite el tráfico por el puerto 80, utilizado por los sitios web con HTTP.
-ufw enable: activa el firewall con las reglas configuradas.
-
-sudo ufw status verbose
-Muestra el estado detallado del firewall, indicando si está activo y qué reglas tiene configuradas (puertos permitidos o bloqueados).
-
-## - Direccionamiento IP
-
+### - Esta es la configuración por defecto
 ![](/img-arodwa/edito-yaml.png)
+
+### - Se edita el archivo de configuración con los siguientes parámetros respetando la indentación o dará error al intentar aplicar...
 
 ![](/img-arodwa/edito-yaml2.png)
 
-### Acá tuve que corregir la indentación...
-para que los ajustes de red tengan efecto en el sistema operativo aplicar: 
+
+### Para que los ajustes de red tengan efecto en el sistema operativo aplicar: 
+
 `sudo netplan apply`
 
 ![](/img-arodwa/aplico-yaml3-netplan.png)
 
 ## Configurando reglas de firewall
 
-![](/img-arodwa/reglas-firewall.png)
+### - Verificar estado de las reglas de firewall, muestra el estado detallado del firewall, indicando si está activo y qué reglas tiene configuradas (puertos permitidos o bloqueados).
 
-Verificar estado de las reglas de firewall
+`sudo ufw status verbose`
+
 ![](/img-arodwa/verificar-estado-fw.png)
 
-### Explicación breve de los comandos:
+## Aplicar todos los comandos que están a continuación:
 
-1. Establecer las políticas predeterminadas por defecto, lo más seguro es bloquear todas las conexiones entrantes y permitir las salientes.bashsudo ufw default deny incoming
+`sudo ufw default deny incoming`
+`sudo ufw default allow outgoing`
+`sudo ufw allow ssh`
+`sudo ufw enable`
+`sudo ufw allow 80/tcp`
+`sudo ufw allow 443/tcp`
+
+![](/img-arodwa/reglas-firewall.png)
+
+### Resumen de los comandos:
+
+1. Establecer las políticas predeterminadas por defecto, lo más seguro es bloquear todas las conexiones entrantes y permitir las salientes.
+`sudo ufw default deny incoming`
 `sudo ufw default allow outgoing`
 
 2. Permitir servicios esenciales (Ej. SSH)Si administras el servidor de forma remota, es obligatorio habilitar el acceso SSH antes de encender el firewall, de lo contrario te bloquearás a ti mismo.
@@ -74,3 +76,4 @@ Verificar estado de las reglas de firewall
 
 5. Verificar el estado y las reglas activas para comprobar que el firewall está activo y ver qué puertos están abiertos:
 `sudo ufw status verbose`
+
