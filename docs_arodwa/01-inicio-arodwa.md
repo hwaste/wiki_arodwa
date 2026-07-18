@@ -4,15 +4,15 @@ La idea de este wiki es documentar el proceso de instalación de linux server en
 
 ## Topología
 
-- Capa Lógica y de Servicios (Servidores)Servidor Principal (Nivel 1): Un equipo que actúa como nodo central, conteniendo diferentes servicios desplegados en máquinas virtuales (VM) o contenedores.
+Capa Lógica y de Servicios (Servidores)Servidor Principal (Nivel 1): Un equipo que actúa como nodo central, conteniendo diferentes servicios desplegados en máquinas virtuales (VM) o contenedores.
 
 Servicios Independientes: Cada servicio crítico se levanta en un contenedor o máquina virtual distinta.Web/Base de Datos: Aloja el servidor HTTP y el motor de datos.
 
 Gestión y Monitoreo: Aloja herramientas de control centralizado.
 
-Seguridad: Servidor cortafuegos o IDS (Sistema de Detección de Intrusos).
+Seguridad: Firewall.
 
-- Capa Física / Recursos Anfitrión Hardware Base: La computadora física o servidor (con procesador compatible con virtualización y suficiente memoria RAM) que soporta el laboratorio.
+Capa Física / Recursos Anfitrión Hardware Base: La computadora física o servidor (con procesador compatible con virtualización y suficiente memoria RAM) que soporta el laboratorio.
 
 Caracteristicas tecnicas del pc anfitrión utilizado:
 
@@ -31,8 +31,8 @@ Hipervisor / Motor de Contenedores: Software encargado de la virtualización. La
 
 ## Propósito
 
-- Conocer el entorno de Linux server, y algunas configuraciones iniciales básicas.
-- Mostrar como operar Linux server a través de la "CLI" o consola de comandos.
-- Mostrar los primeros paso luego de instalar Linux server.
+Conocer el entorno de Linux server, y algunas configuraciones iniciales básicas.
+Mostrar como operar Linux server a través de la "CLI" o consola de comandos.
+Mostrar los primeros paso luego de instalar Linux server.
 
 > El wiki contiene imágenes del proceso de configuración para apoyar en el proceso y sea mas amigable al usuario lector.

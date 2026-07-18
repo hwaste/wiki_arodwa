@@ -1,4 +1,7 @@
-"Lectura de permisos, chmod , chown y un per-
-miso especial"
+Lectura de permisos
+
+chmod 
+chown 
+y un permiso especial
 
 
