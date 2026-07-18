@@ -1,4 +1,4 @@
-## B - Instalación, configuración básica, y firewall
+## B - Configuración IP inicial, firewall y actualizaciones
 
 Cambiar el nombre del hostname:
 `sudo hostnamectl set-hostname srv-wiki`
@@ -77,3 +77,15 @@ en la terminal abrir el archivo de configuración
 5. Verificar el estado y las reglas activas para comprobar que el firewall está activo y ver qué puertos están abiertos:
 `sudo ufw status verbose`
 
+## Actualizaciones
+
+`sudo apt update && sudo apt upgrade -y`
+
+`apt update: actualiza la lista de programas y versiones disponibles en los repositorios.`
+
+![](/img-arodwa/update-aptupdate-aptupgrade.png)
+
+
+&&: hace que el siguiente comando se ejecute solo si el anterior terminó correctamente.
+
+apt upgrade -y : instala todas las actualizaciones disponibles para los programas ya instalados. La opción -y responde automáticamente "sí" a las preguntas de confirmación.
