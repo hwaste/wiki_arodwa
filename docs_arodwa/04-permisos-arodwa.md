@@ -26,6 +26,7 @@ Activa el sticky bit en /tmp, permitiendo que cada usuario elimine únicamente s
 Muestra los permisos, propietario, grupo y atributos de ambos directorios para verificar que setgid (s) y sticky bit (t) se aplicaron correctamente.
 
 ![](/img-arodwa/8permiso-especial-con-setgid.png)
-Permiso especial con setgid.
+
+Activa el permiso especial setgid en el directorio /srv/compartido. Esto hace que todos los archivos y subdirectorios creados dentro de él hereden automáticamente el mismo grupo del directorio, en lugar del grupo principal del usuario que los crea.
 
 
