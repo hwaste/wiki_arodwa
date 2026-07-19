@@ -1,4 +1,4 @@
-## A - Software libre y licencias
+# A - Software libre y licencias
 
 A continuación se muestra la aplicación de los diferentes comandos para visualizar la documentación acerca de las diferentes licencias.
 

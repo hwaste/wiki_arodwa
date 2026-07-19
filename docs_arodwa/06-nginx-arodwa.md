@@ -1,11 +1,34 @@
-# GPO en AroDWA
+# Instalar NGINX en Ubuntu Server
 
-Este documento servirá para explicar el uso de las políticas de grupo.
+> 1. Actualizar el sistema
+sudo apt update && sudo apt upgrade -y
 
-## Función de las GPO
+Actualiza la lista de paquetes e instala las últimas actualizaciones.
 
-- Aplicar configuraciones a múltiples equipos.
-- Asegurar cumplimiento de normas internas.
-- Simplificar la administración centralizada.
+> 2. Instalar NGINX
+sudo apt install nginx -y
 
-> Puedes ampliar este texto con ejemplos reales o capturas posteriores.
+Descarga e instala el servidor web NGINX.
+
+3. Verificar que el servicio esté funcionando
+sudo systemctl status nginx
+
+Comprueba que NGINX esté activo. Si aparece active (running), la instalación fue correcta.
+
+4. Habilitar el firewall (UFW)
+
+Permitir conexiones HTTP:
+
+sudo ufw allow 'Nginx HTTP'
+
+O bien:
+
+sudo ufw allow 80/tcp
+
+Si aún no está habilitado:
+
+sudo ufw enable
+
+Verificar reglas:
+
+sudo ufw status

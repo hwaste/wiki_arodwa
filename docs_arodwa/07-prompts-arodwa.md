@@ -1,11 +1,10 @@
-# Prompts de AroDWA
+# Prompts que me ayudaron con la creacion de esta wiki con framework React
 
-Este documento se usará para guardar ejemplos o plantillas de prompts relacionados con la wiki.
+## Prompts:
 
-## Ejemplo
+- Prompt para creacion de la wiki con ia copilot integrado en visual studio code:
+> "quiero crear una wiki organizada con los diferentes contenidos en archivos con formato markdown .md, que ademas sea desplegada con framework react, para luego ser desplegada en vercel"
 
-- Prompt de ayuda para instalación.
-- Prompt de explicación de Active Directory.
-- Prompt de apoyo para la gestión de GPO.
+- Prompt que me ayudó a organizar las rutas de las imagenes porque no se veian en vercel:
+> "solucionar el problema de las rutas de imagenes para que se puedan visualizar correctamente al desplegar en vercel"
 
-> Modifica esta sección con tus prompts definitivos más adelante.

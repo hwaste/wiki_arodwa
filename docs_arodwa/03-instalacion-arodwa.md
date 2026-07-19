@@ -1,4 +1,4 @@
-## B - Configuración IP inicial, firewall y actualizaciones
+# B - Configuración IP inicial, firewall y actualizaciones
 
 Cambiar el nombre del hostname:
 `sudo hostnamectl set-hostname srv-wiki`

@@ -1,4 +1,4 @@
-## Permisos por línea de comandos
+# Permisos por línea de comandos
 
 Para el ejemplo se crea un directorio de nombre "privado" y un archivo "nota" para asignar permisos...
 Aplicando los comandos chmod, chown y un permiso especial
